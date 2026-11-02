@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cờ Tư Lệnh Online</title><link rel="stylesheet" href="style.css"></head>
+<body><main class="app">
+<header><div><small>TRÒ CHƠI CHIẾN THUẬT VIỆT NAM</small><h1>CỜ TƯ LỆNH ONLINE</h1></div><span class="tag">BETA</span></header>
+<section class="panel">
+<div class="actions"><button id="create">Tạo phòng</button><input id="room" maxlength="6" placeholder="Mã phòng"><button id="join">Vào phòng</button></div>
+<p id="notice">Tạo phòng mới hoặc nhập mã phòng bạn bè gửi.</p>
+<div class="meta"><b id="roomLabel">Chưa vào phòng</b><span id="turn">Chưa bắt đầu</span><span id="side"></span></div>
+</section>
+<section class="game">
+<div class="board-wrap"><div id="board" aria-label="Bàn cờ Cờ Tư Lệnh"></div></div>
+<aside><h2>Quân cờ</h2><div id="legend"></div><h2>Lịch sử</h2><ol id="history"></ol>
+<p class="warning">Bản beta: luật di chuyển cơ bản đang được thử nghiệm. Chưa dùng cho thi đấu chính thức.</p></aside>
+</section><footer>Chơi trên trình duyệt · Máy tính và điện thoại</footer>
+</main>
+<script src="/socket.io/socket.io.js"></script><script src="rules.js"></script><script src="client.js"></script></body></html>
